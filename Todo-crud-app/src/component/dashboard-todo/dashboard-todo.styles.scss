@@ -1,0 +1,33 @@
+.background{
+    max-height:100%;
+    background-color:rgb(243, 243, 243);
+    
+    margin: 0 auto;
+}
+
+.dashboard-todo-section{
+    padding: 10px 10% 30px;
+}
+
+.dashboard-todo-container{
+    width: 100%;
+    background-color:rgb(243, 243, 243);
+    justify-content: center;
+}
+
+.dashboard-todo-title{
+    text-align:center;
+    padding:20px;
+    color: rgb(63, 60, 255);
+}
+
+.dashboard-todo-content{
+    background-color:rgb(247, 247, 247);
+    width: 100%;
+    min-height:400px;
+    margin: 0 auto;
+}
+
+.dashboard-ul{
+    margin:0px auto;
+}

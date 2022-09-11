@@ -1,0 +1,65 @@
+@mixin shrinkLabel {
+    top: -14px;
+    font-size: 12px;
+    color: #e6e6e6;
+  }
+.form-todo{
+    width:100%;
+    display: grid;
+    grid-template-columns: 95% 5% ;
+}
+.form-todo-container{
+    position: relative;
+    
+
+    
+    .form-input-todo {
+        background: none;
+        color: #257cff;
+        font-size: 22px;
+        background-color: #fafafa;
+        padding: 10px 10px 5px 10px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #e6e6e6;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:focus ~ .form-input-label {
+          @include shrinkLabel();
+        }
+    }
+
+     
+    .form-input-todo:hover{
+        border-bottom: 1px solid #257cff;
+    }
+
+    .btn-submit-todo{
+        background-color:#257cff;
+        border: 1px solid #257cff;
+        cursor: pointer;
+        height:100%;
+        width: 100%;
+
+        .create-icon{
+            fill:  #fafafa;
+        }
+    }
+    .btn-submit-todo:hover{
+        background-color:#005fec;
+        border: 1px solid #005fec;
+        cursor: pointer;
+        height:42px;
+
+        .create-icon:hover{
+            fill: #257cff;
+        }
+
+    }
+
+}

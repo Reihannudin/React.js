@@ -1,0 +1,43 @@
+
+.item-todo-container{
+    width: 100%;
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    list-style-type: none;
+    flex-direction: column;
+    overflow:auto;
+}
+
+.item-todo-row{
+    background-color: #FFFFFF;
+    width: 100%;
+    border-radius: 8px;
+    display:grid;   
+    grid-template-columns: 10% 80% 10%
+    ;
+    margin:10px auto;
+    flex-direction: column;
+    overflow:auto
+}
+
+.item-todo-checkbox{
+    margin: auto;
+    border-bottom: 1px solid #f1f1f1;
+    cursor: pointer;
+    width: 40%;
+    height: 40%;
+}
+
+.delete-todo-btn{
+    background-color: #FFFFFF;
+    margin: auto;
+    outline: none;
+    border: 0px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.delete-icon{
+    background-color: #FFFFFF;
+    margin: auto;
+}
