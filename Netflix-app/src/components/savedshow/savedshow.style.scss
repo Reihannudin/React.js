@@ -1,0 +1,156 @@
+
+.row-title{
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 12px;
+}
+
+.row-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+
+.slider-left{
+    background-color:#FFFFFF;
+    left: 0;
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+    display:hidden;
+}
+
+.slider-left:hover{
+    opacity: 0.9;
+    background-color:#FFFFFF;
+    display:flex;
+}
+
+.slider-right{
+    background-color:#FFFFFF;
+    right: 0;
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+    display:hidden;
+}
+
+.slider-right:hover{
+    opacity: 0.9;
+    background-color:#FFFFFF;
+    display:flex;
+}
+
+.row-content{
+    width: 100%;
+    height: 100%;
+    white-space:nowrap;
+    scroll-behavior: smooth;
+    display:relative;
+    overflow-x: scroll; /* Hide horizontal scrollbar */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.saved-box{
+    width: 280px ;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.row-content::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.movie-container{
+    width:280px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding: 2px;
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(22, 22, 22));
+}
+
+.movie-image{
+    width: 100%;
+    height:100%; 
+    display: block;
+    opacity: 0.8;
+}
+
+.movie-hover{
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    width: 100%;
+    height: 100%;
+}
+
+.movie-hover:hover{
+    background-color:black;
+    opacity: 0.8;
+    color: white; 
+    
+    .movie-title-hover{
+        white-space: normal;
+        font-size: 14px;
+        font-weight: bold;
+        display: flex;
+        justify-content:center;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+        color:#FFFFFF
+    }
+
+    .heart-icon{
+        position: absolute;
+        top: 4%;
+        display:flex;
+        left: 4%;
+        color: #d4d4d4;
+    }
+    
+}
+
+.movie-title{
+    color:#FFFFFF;
+}
+
+.movie-title-hover{
+    display: none;
+}
+
+
+.heart-icon{
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    display: none;
+    color: #d4d4d4;
+}
+
+@media screen and (max-width:1082px) {
+ 
+    .saved-box{
+        width: 200px ;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .movie-container{
+        width:200px;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        padding: 2px;
+        background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(22, 22, 22));
+    }
+}
